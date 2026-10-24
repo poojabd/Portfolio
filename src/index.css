@@ -1,0 +1,136 @@
+:root {
+  --bg: #07111f;
+  --bg-elevated: rgba(15, 23, 42, 0.7);
+  --bg-soft: rgba(15, 23, 42, 0.3);
+  --primary: #8b5cf6;
+  --secondary: #3b82f6;
+  --accent: #22d3ee;
+  --text-primary: #e5f0ff;
+  --text-secondary: #aab9d1;
+  --border-soft: rgba(148, 163, 184, 0.18);
+  --shadow: rgba(15, 23, 42, 0.38);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--text-primary);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html[data-theme='light'] {
+  --bg: #edf4ff;
+  --bg-elevated: rgba(255, 255, 255, 0.82);
+  --bg-soft: rgba(255, 255, 255, 0.66);
+  --primary: #7c3aed;
+  --secondary: #2563eb;
+  --accent: #0891b2;
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --border-soft: rgba(30, 41, 59, 0.12);
+  --shadow: rgba(15, 23, 42, 0.12);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background:
+    radial-gradient(circle at top left, rgba(139, 92, 246, 0.22), transparent 32%),
+    radial-gradient(circle at bottom right, rgba(34, 211, 238, 0.12), transparent 25%),
+    var(--bg);
+  color: var(--text-primary);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+p,
+h1,
+h2,
+h3,
+ul,
+li,
+button,
+input,
+textarea,
+a {
+  margin: 0;
+}
+
+main {
+  overflow: hidden;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.2);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, rgba(139, 92, 246, 0.9), rgba(34, 211, 238, 0.7));
+  border-radius: 999px;
+}
+
+html[data-theme='light'] .profile-card,
+html[data-theme='light'] .tech-tags span,
+html[data-theme='light'] .skill-group,
+html[data-theme='light'] .project-card,
+html[data-theme='light'] .cert-card,
+html[data-theme='light'] .timeline-content,
+html[data-theme='light'] .education-card,
+html[data-theme='light'] .contact-details,
+html[data-theme='light'] .contact-form,
+html[data-theme='light'] .mini-card,
+html[data-theme='light'] .site-footer {
+  background: rgba(255, 255, 255, 0.75);
+}
+
+html[data-theme='light'] .nav-panel,
+html[data-theme='light'] .status-badge,
+html[data-theme='light'] .project-tag,
+html[data-theme='light'] .project-status,
+html[data-theme='light'] .tech-stack span,
+html[data-theme='light'] .skill-chip,
+html[data-theme='light'] .theme-toggle,
+html[data-theme='light'] .nav-toggle,
+html[data-theme='light'] .secondary-btn,
+html[data-theme='light'] .copy-btn {
+  background: rgba(255, 255, 255, 0.82);
+}
+
+html[data-theme='light'] .nav-links a,
+html[data-theme='light'] .brand,
+html[data-theme='light'] .primary-btn,
+html[data-theme='light'] .secondary-btn,
+html[data-theme='light'] .theme-toggle,
+html[data-theme='light'] .copy-btn,
+html[data-theme='light'] .nav-cta {
+  color: var(--text-primary);
+}
+
+html[data-theme='light'] .site-header {
+  background: rgba(237, 244, 255, 0.62);
+}
+
+html[data-theme='light'] body {
+  background: linear-gradient(180deg, #edf4ff 0%, #f8fbff 100%);
+}
